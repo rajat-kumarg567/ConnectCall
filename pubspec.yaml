@@ -1,0 +1,42 @@
+name: connectcall
+description: "ConnectCall - 1-to-1 audio & video calling app built in Flutter"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+
+  # State management
+  provider: ^6.1.2
+
+  # Firebase (auth, user list, call history, signaling)
+  firebase_core: ^3.6.0
+  firebase_auth: ^5.3.1
+  cloud_firestore: ^5.4.4
+
+  # Real-time audio/video calling via ZEGOCLOUD's prebuilt call UIKit
+  # (free tier: 10,000 min/month, offers built-in ringing/accept/reject UI)
+  zego_uikit_prebuilt_call: ^4.22.3
+  zego_uikit_signaling_plugin: ^2.8.20
+
+  # Device permissions
+  permission_handler: ^12.0.1
+
+  # Small utilities
+  intl: ^0.19.0
+  uuid: ^4.4.2
+  connectivity_plus: ^6.0.5
+  shared_preferences: ^2.3.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
